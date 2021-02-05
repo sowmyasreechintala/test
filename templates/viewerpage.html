@@ -1,0 +1,10 @@
+<table align="center" border="2">
+<tr><th colspan="4" style="background-color: cornflowerblue;font-size: 25px;">VIEWER LIST</th></tr>
+    {% for x in data %}
+
+        <tr><th>{{ x.textfield }}</th>
+        <th>{{ x.title }}</th>
+        <th>{{ x.content }}</th>
+        <th><img src={{ x.image.url }} width="150px" height="150px"></th></tr>
+    {% endfor %}
+</table>
